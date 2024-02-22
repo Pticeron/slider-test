@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Slider</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <video src="./video/2.mp4" id="video-slider"
+        autoplay muted loop></video>
+        <ul class="controls">
+            <li onclick="videoUrl('./video/1.mp4')">
+                <img src="./images/Screenshot_1.png" alt="Birds">
+            </li>
+            <li onclick="videoUrl('./video/2.mp4')">
+                <img src="./images/Screenshot_2.png" alt="Sea">
+            </li>
+            <li onclick="videoUrl('./video/3.mp4')">
+                <img src="./images/Screenshot_3.png" alt="Dandelion">
+            </li>
+            <li onclick="videoUrl('./video/4.mp4')">
+                <img src="./images/Screenshot_4.png" alt="North Light">
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        function videoUrl(slider) {
+            document.getElementById('video-slider').src = slider;
+        }
+    </script>
+
+</body>
+</html>
+
+<!-- 🔗 Ссылка на сайт, где можно скачать видео: https://pixabay.com/videos/
+🔗 Ссылка на сайт, где можно скачать видео: https://www.videvo.net/
+🔗 Ссылка на сайт, где можно скачать видео: https://mazwai.com/
+🔗 LightShot - программа для скриншотов: https://app.prntscr.com/ru/index.html -->
